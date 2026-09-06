@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abdul Ghofur Luqman Salim — Software Engineering Student, ITS</title>
-  <meta name="description" content="Portfolio Abdul Ghofur Luqman Salim, Mahasiswa Rekayasa Perangkat Lunak Institut Teknologi Sepuluh Nopember (ITS) Surabaya. Tertarik pada teknologi yang nyata, terstruktur, dan bermanfaat." />
-  <meta name="keywords" content="Luqman, Abdul Ghofur, Software Engineering, ITS, Rekayasa Perangkat Lunak, Portfolio, Mobile Developer, UMKM SaaS" />
+  <meta name="description"
+    content="Portfolio Abdul Ghofur Luqman Salim, Mahasiswa Rekayasa Perangkat Lunak Institut Teknologi Sepuluh Nopember (ITS) Surabaya. Tertarik pada teknologi yang nyata, terstruktur, dan bermanfaat." />
+  <meta name="keywords"
+    content="Luqman, Abdul Ghofur, Software Engineering, ITS, Rekayasa Perangkat Lunak, Portfolio, Mobile Developer, UMKM SaaS" />
   <meta property="og:title" content="Abdul Ghofur Luqman Salim — Portfolio" />
-  <meta property="og:description" content="Mahasiswa Rekayasa Perangkat Lunak ITS. Tertarik pada bagaimana teknologi dapat diterjemahkan menjadi solusi yang nyata, terstruktur, dan bermanfaat." />
+  <meta property="og:description"
+    content="Mahasiswa Rekayasa Perangkat Lunak ITS. Tertarik pada bagaimana teknologi dapat diterjemahkan menjadi solusi yang nyata, terstruktur, dan bermanfaat." />
   <meta property="og:type" content="website" />
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -30,7 +36,9 @@
       --font-body: 'Inter', sans-serif;
     }
 
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -54,9 +62,18 @@
       color: #FFFFFF;
     }
 
-    ::-webkit-scrollbar { width: 5px; }
-    ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 2px;
+    }
 
     :focus-visible {
       outline: 2px solid var(--accent);
@@ -492,8 +509,16 @@
       border: 1px solid rgba(255, 255, 255, 0.15);
     }
 
-    .hero-overlay-label.tl { top: 2.5rem; left: 1.5rem; }
-    .hero-overlay-label.br { bottom: 4rem; right: 1.5rem; text-align: right; }
+    .hero-overlay-label.tl {
+      top: 2.5rem;
+      left: 1.5rem;
+    }
+
+    .hero-overlay-label.br {
+      bottom: 4rem;
+      right: 1.5rem;
+      text-align: right;
+    }
 
     /* Scroll Indicator */
     .scroll-ind {
@@ -534,8 +559,13 @@
     }
 
     @keyframes scrollDown {
-      0% { top: -100%; }
-      100% { top: 100%; }
+      0% {
+        top: -100%;
+      }
+
+      100% {
+        top: 100%;
+      }
     }
 
     /* === ABOUT SECTION === */
@@ -563,7 +593,7 @@
 
     .about-photo-wrap {
       width: 100%;
-      height: 470px;
+      height: 500px;
       overflow: hidden;
       position: relative;
       border-radius: 4px;
@@ -575,9 +605,9 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 20%;
+      object-position: center bottom;
       display: block;
-      filter: grayscale(15%);
+      filter: grayscale(12%);
       transition: filter .5s cubic-bezier(.22, 1, .36, 1), transform .7s cubic-bezier(.22, 1, .36, 1);
     }
 
@@ -796,8 +826,17 @@
     }
 
     @keyframes pulseDot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: .4; transform: scale(0.75); }
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: .4;
+        transform: scale(0.75);
+      }
     }
 
     .project-subtitle {
@@ -961,7 +1000,7 @@
       border-radius: 8px;
       padding: 8px 6px;
       text-align: center;
-      box-shadow: 0 1px 4px rgba(0,0,0,.03);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .03);
     }
 
     .app-stat-val {
@@ -1003,7 +1042,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 1px 3px rgba(0,0,0,.02);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .02);
       transition: transform .2s ease;
     }
 
@@ -1038,10 +1077,21 @@
       border-radius: 50%;
     }
 
-    .dot-ok { background: var(--accent); }
-    .dot-low { background: #E85D04; }
-    .stock-ok { color: var(--accent); }
-    .stock-low { color: #E85D04; }
+    .dot-ok {
+      background: var(--accent);
+    }
+
+    .dot-low {
+      background: #E85D04;
+    }
+
+    .stock-ok {
+      color: var(--accent);
+    }
+
+    .stock-low {
+      color: #E85D04;
+    }
 
     .app-scan-btn {
       margin: 8px 14px 6px;
@@ -1185,9 +1235,30 @@
 
     /* === PHILOSOPHY SECTION === */
     #philosophy {
-      padding: 11rem 0;
+      padding: 8rem 0;
       overflow: hidden;
       background: var(--bg);
+      position: relative;
+    }
+
+    .phil-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .phil-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-light);
+      border: 1px solid rgba(8, 127, 104, 0.25);
+      padding: .45rem 1.05rem;
+      border-radius: 2px;
+      margin-bottom: 1.25rem;
     }
 
     .phil-label {
@@ -1195,8 +1266,7 @@
       font-weight: 600;
       letter-spacing: .22em;
       text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 3.5rem;
+      color: var(--secondary);
       display: flex;
       align-items: center;
       gap: .75rem;
@@ -1212,11 +1282,12 @@
     .phil-quote {
       font-family: var(--font-display);
       font-weight: 900;
-      font-size: clamp(2.4rem, 5.6vw, 6rem);
+      font-size: clamp(2.4rem, 5.5vw, 5.5rem);
       line-height: 1.08;
       letter-spacing: -.03em;
       color: var(--primary);
       position: relative;
+      margin-bottom: 2.5rem;
     }
 
     .phil-mark {
@@ -1235,6 +1306,26 @@
 
     .phil-accent {
       color: var(--accent);
+    }
+
+    .phil-caption {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      max-width: 620px;
+    }
+
+    .phil-divider {
+      width: 44px;
+      height: 1.5px;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .phil-caption p {
+      font-size: .92rem;
+      line-height: 1.75;
+      color: var(--secondary);
     }
 
     /* === CONTACT SECTION === */
@@ -1415,10 +1506,21 @@
       transform: translateY(0);
     }
 
-    .reveal-d1 { transition-delay: .1s; }
-    .reveal-d2 { transition-delay: .2s; }
-    .reveal-d3 { transition-delay: .3s; }
-    .reveal-d4 { transition-delay: .4s; }
+    .reveal-d1 {
+      transition-delay: .1s;
+    }
+
+    .reveal-d2 {
+      transition-delay: .2s;
+    }
+
+    .reveal-d3 {
+      transition-delay: .3s;
+    }
+
+    .reveal-d4 {
+      transition-delay: .4s;
+    }
 
     /* Hero Initial Animations */
     .ha {
@@ -1434,20 +1536,46 @@
     }
 
     @keyframes haIn {
-      to { opacity: 1; transform: translateY(0); }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes haInR {
-      to { opacity: 1; transform: translateX(0); }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
 
-    .ha-1 { animation-delay: .1s; }
-    .ha-2 { animation-delay: .25s; }
-    .ha-3 { animation-delay: .4s; }
-    .ha-4 { animation-delay: .55s; }
-    .ha-5 { animation-delay: .7s; }
-    .ha-6 { animation-delay: .85s; }
-    .ha-r { animation-delay: .45s; }
+    .ha-1 {
+      animation-delay: .1s;
+    }
+
+    .ha-2 {
+      animation-delay: .25s;
+    }
+
+    .ha-3 {
+      animation-delay: .4s;
+    }
+
+    .ha-4 {
+      animation-delay: .55s;
+    }
+
+    .ha-5 {
+      animation-delay: .7s;
+    }
+
+    .ha-6 {
+      animation-delay: .85s;
+    }
+
+    .ha-r {
+      animation-delay: .45s;
+    }
 
     /* === RESPONSIVE DESIGN === */
     @media (max-width: 1024px) {
@@ -1455,45 +1583,62 @@
         grid-template-columns: 1fr;
         min-height: auto;
       }
+
       .hero-left {
         padding: 4rem 0 1.5rem;
       }
+
       .hero-right {
         height: 70vw;
         max-height: 480px;
         min-height: 340px;
         margin-top: 1rem;
       }
+
       .hero-circle-bg {
         right: 50%;
         transform: translate(50%, -50%);
         width: 340px;
         height: 340px;
       }
+
       .hero-circle-solid {
         right: 50%;
         transform: translate(50%, -55%);
         width: 270px;
         height: 270px;
       }
-      .hero-overlay-label.tl { top: 1rem; left: 1rem; }
-      .hero-overlay-label.br { bottom: 1rem; right: 1rem; }
+
+      .hero-overlay-label.tl {
+        top: 1rem;
+        left: 1rem;
+      }
+
+      .hero-overlay-label.br {
+        bottom: 1rem;
+        right: 1rem;
+      }
+
       .about-grid {
         grid-template-columns: 1fr;
         gap: 3.5rem;
       }
+
       .work-grid {
         grid-template-columns: 1fr;
         gap: 0;
       }
+
       .project-top {
         grid-template-columns: 1fr;
         gap: 2.5rem;
       }
+
       .mockup-section {
         grid-template-columns: 1fr;
         gap: 3.5rem;
       }
+
       .contact-grid {
         grid-template-columns: 1fr;
         gap: 4rem;
@@ -1501,760 +1646,864 @@
     }
 
     @media (max-width: 768px) {
-      .nav-inner { padding: 0 1.5rem; }
-      .section-wrapper { padding: 0 1.5rem; }
-      .nav-links { display: none; }
-      .nav-toggle { display: flex; }
-      .hero-name { font-size: clamp(2.6rem, 13vw, 4.4rem); }
-      .hero-meta { gap: 1.25rem; }
-      #about { padding: 6rem 0; }
-      #work { padding: 6rem 0; }
-      #project { padding: 6rem 0; }
-      #philosophy { padding: 7rem 0; }
-      #contact { padding: 7rem 0; }
-      .proj-info-grid { grid-template-columns: 1fr; }
-      .proj-info-item:nth-child(odd) { border-right: none; padding-right: 0; }
-      .proj-info-item:nth-child(even) { padding-left: 0; }
-      .phone-frame { transform: none; }
+      .nav-inner {
+        padding: 0 1.5rem;
+      }
+
+      .section-wrapper {
+        padding: 0 1.5rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: flex;
+      }
+
+      .hero-name {
+        font-size: clamp(2.6rem, 13vw, 4.4rem);
+      }
+
+      .hero-meta {
+        gap: 1.25rem;
+      }
+
+      #about {
+        padding: 6rem 0;
+      }
+
+      #work {
+        padding: 6rem 0;
+      }
+
+      #project {
+        padding: 6rem 0;
+      }
+
+      #philosophy {
+        padding: 7rem 0;
+      }
+
+      #contact {
+        padding: 7rem 0;
+      }
+
+      .proj-info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .proj-info-item:nth-child(odd) {
+        border-right: none;
+        padding-right: 0;
+      }
+
+      .proj-info-item:nth-child(even) {
+        padding-left: 0;
+      }
+
+      .phone-frame {
+        transform: none;
+      }
     }
 
     @media (max-width: 480px) {
-      .hero-cta { flex-direction: column; }
-      .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
-      .hero-name { font-size: clamp(2.3rem, 15vw, 3.4rem); }
-      .phone-frame { width: 240px; height: 480px; }
-      .app-list { max-height: 120px; }
+      .hero-cta {
+        flex-direction: column;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero-name {
+        font-size: clamp(2.3rem, 15vw, 3.4rem);
+      }
+
+      .phone-frame {
+        width: 240px;
+        height: 480px;
+      }
+
+      .app-list {
+        max-height: 120px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+
+      *,
+      *::before,
+      *::after {
         animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: .01ms !important;
       }
-      .reveal { opacity: 1; transform: none; }
-      .ha, .ha-r { opacity: 1; transform: none; }
-      .scroll-line::after { animation: none; }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+
+      .ha,
+      .ha-r {
+        opacity: 1;
+        transform: none;
+      }
+
+      .scroll-line::after {
+        animation: none;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<!-- NAVIGATION -->
-<nav id="nav" role="navigation" aria-label="Main Navigation">
-  <div class="nav-inner">
-    <a href="#home" class="nav-logo" aria-label="LUQMAN - Kembali ke Beranda">LUQMAN</a>
-    <ul class="nav-links" role="list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">How I Work</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <!-- NAVIGATION -->
+  <nav id="nav" role="navigation" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="LUQMAN - Kembali ke Beranda">LUQMAN</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">How I Work</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#work" class="mob-link">How I Work</a></li>
+      <li><a href="#project" class="mob-link">Project</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
-  <ul>
-    <li><a href="#about" class="mob-link">About</a></li>
-    <li><a href="#work" class="mob-link">How I Work</a></li>
-    <li><a href="#project" class="mob-link">Project</a></li>
-    <li><a href="#contact" class="mob-link">Contact</a></li>
-  </ul>
-</div>
-
-<main>
-
-<!-- HERO SECTION -->
-<section id="home" aria-label="Hero — Abdul Ghofur Luqman Salim">
-  <div class="section-wrapper">
-    <div class="hero-grid">
-
-      <!-- Left Column: Typography & Bio -->
-      <div class="hero-left">
-        <p class="hero-eyebrow ha ha-1">Software Engineering Student</p>
-        <h1 class="hero-name ha ha-2">
-          ABDUL GHOFUR<br>LUQMAN SALIM
-        </h1>
-        <div class="ha ha-3">
-          <p class="hero-sub"><strong>Mahasiswa Rekayasa Perangkat Lunak</strong></p>
-          <p class="hero-sub">Institut Teknologi Sepuluh Nopember</p>
-        </div>
-        
-        <div class="hero-meta ha ha-4" role="list">
-          <div class="hero-meta-item" role="listitem">
-            <span class="hero-meta-label">NRP</span>
-            <span class="hero-meta-value">5053251007</span>
-          </div>
-          <div class="hero-meta-item" role="listitem">
-            <span class="hero-meta-label">Lokasi</span>
-            <span class="hero-meta-value">Surabaya, Indonesia</span>
-          </div>
-          <div class="hero-meta-item" role="listitem">
-            <span class="hero-meta-label">Asal Sekolah</span>
-            <span class="hero-meta-value">SMAS eLKISI Mojokerto</span>
-          </div>
-        </div>
-
-        <p class="hero-intro ha ha-5">
-          Saya tertarik pada bagaimana teknologi dapat diterjemahkan menjadi
-          <em>solusi yang nyata, terstruktur, dan bermanfaat.</em>
-        </p>
-
-        <div class="hero-cta ha ha-6">
-          <a href="mailto:ghofursalim2@gmail.com" class="btn-primary" aria-label="Hubungi saya melalui email">
-            HUBUNGI SAYA &rarr;
-          </a>
-          <a href="#project" class="btn-secondary" aria-label="Lihat featured project">
-            VIEW PROJECT &rarr;
-          </a>
-        </div>
-      </div>
-
-      <!-- Right Column: Editorial Cutout & Geometric Accent -->
-      <div class="hero-right" aria-hidden="true">
-        <div class="hero-circle-bg"></div>
-        <div class="hero-circle-solid"></div>
-        <div class="hero-img-wrap ha-r">
-          <img
-            src="Asset/luqman-hero-portrait.png"
-            alt="Abdul Ghofur Luqman Salim berbicara di depan microphone mengenakan blazer ITS"
-            class="hero-photo"
-            loading="eager"
-          />
-        </div>
-        <span class="hero-overlay-label tl">ITS Surabaya &mdash; 2026</span>
-        <span class="hero-overlay-label br">RPL &mdash; Angkatan 2025</span>
-      </div>
-
-    </div>
   </div>
 
-  <!-- Scroll Indicator -->
-  <div class="scroll-ind" aria-hidden="true">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
+  <main>
 
-<!-- ABOUT SECTION -->
-<section id="about" aria-labelledby="about-h">
-  <div class="section-wrapper">
-    <p class="section-label reveal">01 &mdash; About Me</p>
-    <div class="about-grid">
+    <!-- HERO SECTION -->
+    <section id="home" aria-label="Hero — Abdul Ghofur Luqman Salim">
+      <div class="section-wrapper">
+        <div class="hero-grid">
 
-      <!-- Left Column: Title & Photo 2 -->
-      <div>
-        <h2 id="about-h" class="about-headline reveal reveal-d1">
-          GET TO KNOW<br>THE PERSON<br>BEHIND<br>THE CODE.
-        </h2>
-        <div class="reveal reveal-d2">
-          <div class="about-photo-wrap">
-            <img
-              src="Asset/luqman-about-web.jpg"
-              alt="Abdul Ghofur Luqman Salim berdiri di depan gedung Institut Teknologi Sepuluh Nopember"
-              class="about-photo"
-              loading="lazy"
-            />
-          </div>
-          <p class="about-photo-cap">Institut Teknologi Sepuluh Nopember, Surabaya</p>
-        </div>
-      </div>
+          <!-- Left Column: Typography & Bio -->
+          <div class="hero-left">
+            <p class="hero-eyebrow ha ha-1">Software Engineering Student</p>
+            <h1 class="hero-name ha ha-2">
+              ABDUL GHOFUR<br>LUQMAN SALIM
+            </h1>
+            <div class="ha ha-3">
+              <p class="hero-sub"><strong>Mahasiswa Rekayasa Perangkat Lunak</strong></p>
+              <p class="hero-sub">Institut Teknologi Sepuluh Nopember</p>
+            </div>
 
-      <!-- Right Column: Storytelling Content -->
-      <div>
-        <div class="about-p reveal reveal-d1">
-          <p class="about-num">001 &mdash; LATAR BELAKANG</p>
-          <p>
-            Sejak kecil, saya tumbuh di lingkungan yang dekat dengan dunia teknologi dan informatika.
-            <em>Ibu saya merupakan dosen Informatika di ITATS</em>, sementara
-            <em>ayah saya adalah CEO dan Founder Vpoint Solusindo</em>. Dari keduanya, saya mengenal teknologi
-            melalui dua sudut pandang: akademis dan industri. Ibu memperkenalkan saya pada konsep, logika,
-            dan cara berpikir sistematis, sedangkan ayah menunjukkan bagaimana teknologi diterapkan untuk
-            menjawab kebutuhan nyata.
-          </p>
-        </div>
-
-        <div class="about-p reveal reveal-d2">
-          <p class="about-num">002 &mdash; PENGAMATAN &amp; MINAT</p>
-          <p>
-            Kedekatan tersebut membuat saya tidak hanya tertarik menggunakan teknologi, tetapi juga memahami
-            bagaimana sebuah perangkat lunak diciptakan. Saya mulai tertarik pada proses bagaimana suatu
-            permasalahan diidentifikasi, <em>solusi dirancang</em>, kemudian dikembangkan menjadi sebuah produk
-            yang dapat digunakan dan memberikan manfaat.
-          </p>
-        </div>
-
-        <div class="about-p reveal reveal-d3">
-          <p class="about-num">003 &mdash; TUJUAN &amp; AMBISI</p>
-          <p>
-            Bagi saya, <em>Rekayasa Perangkat Lunak menjadi bidang yang mempertemukan logika, kreativitas,
-            dan kemampuan untuk menciptakan solusi bagi berbagai permasalahan</em>. Dari sinilah alasan saya
-            memilih jurusan Rekayasa Perangkat Lunak. Saya berharap masa studi ini tidak hanya menjadi perjalanan
-            untuk mengembangkan kemampuan, tetapi juga menjadi proses untuk menghasilkan karya yang bermanfaat
-            dan menjadikan saya pribadi yang dapat memberi manfaat bagi sesama.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<hr class="divider" />
-
-<!-- HOW I WORK SECTION -->
-<section id="work" aria-labelledby="work-h">
-  <div class="section-wrapper">
-    <p class="section-label reveal">02 &mdash; How I Work</p>
-    <h2 id="work-h" class="work-headline reveal reveal-d1">
-      STRENGTHS &amp;<br>GROWTH AREAS
-    </h2>
-
-    <div class="work-grid">
-
-      <!-- Strengths Column -->
-      <div>
-        <p class="work-col-label">Strengths</p>
-        
-        <div class="work-item reveal reveal-d1">
-          <p class="work-num">01 &mdash;</p>
-          <h3 class="work-title">Adaptive</h3>
-          <p class="work-desc">Saya mampu menyesuaikan diri dengan lingkungan, tools, dan tantangan baru.</p>
-        </div>
-
-        <div class="work-item reveal reveal-d2">
-          <p class="work-num">02 &mdash;</p>
-          <h3 class="work-title">Solutive</h3>
-          <p class="work-desc">Saya terbiasa melihat permasalahan sebagai sesuatu yang perlu dipahami dan dicari solusinya.</p>
-        </div>
-
-        <div class="work-item reveal reveal-d3">
-          <p class="work-num">03 &mdash;</p>
-          <h3 class="work-title">Disciplined &amp; Responsible</h3>
-          <p class="work-desc">Saya berusaha menyelesaikan tanggung jawab yang telah saya ambil dengan konsisten.</p>
-        </div>
-
-        <div class="work-item reveal reveal-d4">
-          <p class="work-num">04 &mdash;</p>
-          <h3 class="work-title">Curious</h3>
-          <p class="work-desc">Saya senang mengeksplorasi hal baru dan mempelajari sesuatu di luar zona nyaman.</p>
-        </div>
-      </div>
-
-      <!-- Growth Areas Column -->
-      <div>
-        <p class="work-col-label">Growth Areas</p>
-
-        <div class="work-item reveal reveal-d1">
-          <p class="work-num">01 &mdash;</p>
-          <h3 class="work-title">Deep Consideration</h3>
-          <p class="work-desc">Saya cenderung mempertimbangkan banyak kemungkinan sebelum mengambil keputusan penting.</p>
-        </div>
-
-        <div class="work-item reveal reveal-d2">
-          <p class="work-num">02 &mdash;</p>
-          <h3 class="work-title">Perfectionism</h3>
-          <p class="work-desc">Saya terkadang terlalu mengejar hasil yang sempurna dan sedang belajar menyeimbangkannya dengan efisiensi dan prioritas.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <p class="work-footer reveal">&ldquo;Self-awareness is part of the process.&rdquo;</p>
-  </div>
-</section>
-
-<!-- FEATURED PROJECT SECTION -->
-<section id="project" aria-labelledby="project-h">
-  <div class="section-wrapper">
-    <p class="section-label reveal">03 &mdash; Featured Project</p>
-
-    <div class="project-top">
-      <div>
-        <div class="project-badge reveal">Planned Project &mdash; In Development Plan</div>
-        <h2 id="project-h" class="project-headline reveal reveal-d1">
-          RETAIL INVENTORY<br>MANAGEMENT<br>SYSTEM
-        </h2>
-      </div>
-      <div class="reveal reveal-d2">
-        <p class="project-subtitle">SaaS-Based Mobile Application</p>
-        <p class="project-intro">
-          Sebagai langkah nyata setelah menyelesaikan mata kuliah Pemrograman Perangkat Bergerak,
-          saya berencana mengembangkan sebuah Retail Inventory Management System berbasis SaaS &mdash;
-          aplikasi mobile yang dirancang untuk membantu pemilik dan penjaga warung kecil dalam
-          mengelola stok barang, mencatat transaksi harian, serta memantau laporan laba-rugi secara real-time.
-        </p>
-        <div class="tags">
-          <span class="tag">Mobile App</span>
-          <span class="tag">SaaS Multi-Tenant</span>
-          <span class="tag">Barcode Scanner</span>
-          <span class="tag">Cloud Storage</span>
-          <span class="tag">UMKM Digitalization</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="mockup-section">
-
-      <!-- Interactive Phone Mockup -->
-      <div class="phone-mockup reveal">
-        <div class="phone-frame" role="region" aria-label="Interactive App Mockup Preview">
-          <div class="phone-notch" aria-hidden="true"></div>
-          <div class="phone-screen" id="mockupScreen">
-
-            <!-- Toast Alert inside App -->
-            <div class="app-toast" id="appToast">Mode Barcode Scanner Siap Digunakan</div>
-
-            <!-- App Header -->
-            <div class="app-hdr">
-              <div class="app-hdr-top">
-                <span class="app-hdr-label" id="mockupViewTitle">Dashboard Toko</span>
-                <span style="font-size:7px;opacity:.7">v1.0-dev</span>
+            <div class="hero-meta ha ha-4" role="list">
+              <div class="hero-meta-item" role="listitem">
+                <span class="hero-meta-label">NRP</span>
+                <span class="hero-meta-value">5053251007</span>
               </div>
-              <div class="app-hdr-title">Warung Berkah &#127978;</div>
-              
-              <div class="app-rev-card">
-                <div>
-                  <div class="app-rev-val">Rp 4.250.000</div>
-                  <div class="app-rev-lbl">Pendapatan Hari Ini</div>
-                </div>
-                <div class="app-rev-badge">+12.4%</div>
+              <div class="hero-meta-item" role="listitem">
+                <span class="hero-meta-label">Lokasi</span>
+                <span class="hero-meta-value">Surabaya, Indonesia</span>
+              </div>
+              <div class="hero-meta-item" role="listitem">
+                <span class="hero-meta-label">Asal Sekolah</span>
+                <span class="hero-meta-value">SMAS eLKISI Mojokerto</span>
               </div>
             </div>
 
-            <!-- Quick Stats -->
-            <div class="app-stats">
-              <div class="app-stat">
-                <div class="app-stat-val">148</div>
-                <div class="app-stat-lbl">Total Item</div>
-              </div>
-              <div class="app-stat">
-                <div class="app-stat-val">32</div>
-                <div class="app-stat-lbl">Transaksi</div>
-              </div>
-              <div class="app-stat">
-                <div class="app-stat-val" style="color:#E85D04">5</div>
-                <div class="app-stat-lbl">Stok Habis</div>
-              </div>
-            </div>
-
-            <!-- Content Area (Dynamic based on Tab) -->
-            <div class="app-sec-ttl" id="mockupListHeader">Stok Barang Terkini</div>
-            
-            <div class="app-list" id="mockupList">
-              <div class="app-row">
-                <div>
-                  <div class="app-item-name">Indomie Goreng Spesial</div>
-                  <div class="app-item-sku">#SKU-001 &bull; Makanan</div>
-                </div>
-                <div class="app-stock stock-ok"><span class="dot dot-ok"></span>142 pcs</div>
-              </div>
-              <div class="app-row">
-                <div>
-                  <div class="app-item-name">Aqua Mineral 600ml</div>
-                  <div class="app-item-sku">#SKU-002 &bull; Minuman</div>
-                </div>
-                <div class="app-stock stock-ok"><span class="dot dot-ok"></span>86 pcs</div>
-              </div>
-              <div class="app-row">
-                <div>
-                  <div class="app-item-name">Teh Botol Sosro 350ml</div>
-                  <div class="app-item-sku">#SKU-003 &bull; Minuman</div>
-                </div>
-                <div class="app-stock stock-low"><span class="dot dot-low"></span>3 pcs</div>
-              </div>
-              <div class="app-row">
-                <div>
-                  <div class="app-item-name">Chitato Sapi Panggang</div>
-                  <div class="app-item-sku">#SKU-004 &bull; Snack</div>
-                </div>
-                <div class="app-stock stock-ok"><span class="dot dot-ok"></span>57 pcs</div>
-              </div>
-            </div>
-
-            <!-- Scan Action Button -->
-            <button class="app-scan-btn" id="appScanBtn" type="button" aria-label="Pindai barcode">
-              <span style="font-size:12px;color:white" aria-hidden="true">&#9638;</span>
-              <span class="app-scan-lbl">SCAN BARCODE</span>
-            </button>
-
-            <!-- Bottom Navigation Bar -->
-            <div class="app-bnav" role="tablist">
-              <button class="app-bnav-item on" data-tab="dashboard" role="tab" aria-selected="true" aria-label="Tab Dashboard">
-                <span class="app-bnav-icon" aria-hidden="true">&#8962;</span>
-                <span class="app-bnav-lbl">Dashboard</span>
-              </button>
-              <button class="app-bnav-item" data-tab="inventory" role="tab" aria-selected="false" aria-label="Tab Inventori">
-                <span class="app-bnav-icon" aria-hidden="true">&#9776;</span>
-                <span class="app-bnav-lbl">Inventori</span>
-              </button>
-              <button class="app-bnav-item" data-tab="transaction" role="tab" aria-selected="false" aria-label="Tab Transaksi">
-                <span class="app-bnav-icon" aria-hidden="true">&#10022;</span>
-                <span class="app-bnav-lbl">Transaksi</span>
-              </button>
-              <button class="app-bnav-item" data-tab="report" role="tab" aria-selected="false" aria-label="Tab Laporan">
-                <span class="app-bnav-icon" aria-hidden="true">&#9783;</span>
-                <span class="app-bnav-lbl">Laporan</span>
-              </button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Detailed Architecture Info -->
-      <div>
-        <p style="font-size:.92rem;line-height:1.8;color:var(--secondary);margin-bottom:1.5rem" class="reveal">
-          Aplikasi ini hadir sebagai solusi praktis atas permasalahan pencatatan manual yang rentan selisih dan kerugian,
-          sekaligus memberikan kemudahan akses fitur seperti barcode scanner langsung dari genggaman.
-        </p>
-        <p style="font-size:.92rem;line-height:1.8;color:var(--secondary);margin-bottom:3rem" class="reveal reveal-d1">
-          Selain mengasah kemampuan pemrograman mobile, arsitektur multi-tenant, dan integrasi cloud storage,
-          proyek ini menjadi ajang bagi saya untuk menghadirkan teknologi yang relevan, terjangkau, dan berdampak
-          langsung pada digitalisasi usaha mikro di sekitar kita.
-        </p>
-
-        <div class="proj-info-grid reveal reveal-d2">
-          <div class="proj-info-item">
-            <p class="proj-info-lbl">Problem</p>
-            <p class="proj-info-val">Pencatatan stok manual rentan terhadap kesalahan hitung dan selisih pembukuan harian.</p>
-          </div>
-          <div class="proj-info-item">
-            <p class="proj-info-lbl">Solution</p>
-            <p class="proj-info-val">Aplikasi mobile terintegrasi untuk manajemen inventory dan pencatatan transaksi kasir kilat.</p>
-          </div>
-          <div class="proj-info-item">
-            <p class="proj-info-lbl">Target Users</p>
-            <p class="proj-info-val">Pemilik dan penjaga warung kelontong / pelaku usaha mikro (UMKM).</p>
-          </div>
-          <div class="proj-info-item">
-            <p class="proj-info-lbl">Core Features</p>
-            <div class="proj-info-val">
-              <ul>
-                <li>Inventory management &amp; stock alert</li>
-                <li>Transaction recording (POS mobile)</li>
-                <li>Barcode scanner via camera</li>
-                <li>Profit &amp; loss reporting real-time</li>
-                <li>Cloud synchronization</li>
-              </ul>
-            </div>
-          </div>
-          <div class="proj-info-item">
-            <p class="proj-info-lbl">Tech Direction</p>
-            <div class="proj-info-val">
-              <ul>
-                <li>Mobile development (Modern UI)</li>
-                <li>SaaS &amp; Multi-Tenant architecture</li>
-                <li>Cloud storage &amp; offline-first sync</li>
-                <li>RESTful API integration</li>
-              </ul>
-            </div>
-          </div>
-          <div class="proj-info-item">
-            <p class="proj-info-lbl">Impact</p>
-            <p class="proj-info-val">Membantu usaha mikro melakukan tata kelola inventori secara lebih praktis, rapi, dan terhindar dari kerugian.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<hr class="divider" />
-
-<!-- PERSONAL PHILOSOPHY SECTION -->
-<section id="philosophy" aria-labelledby="phil-h">
-  <div class="section-wrapper">
-    <p class="phil-label reveal">Personal Philosophy</p>
-    <blockquote class="phil-quote reveal reveal-d1" id="phil-h">
-      <span class="phil-mark" aria-hidden="true">&ldquo;</span>
-      &ldquo;Bukan soal siapa<br>yang paling bersinar,<br>
-      <span class="phil-accent">tetapi bagaimana kita</span><br>
-      membagi terang ke sekitar.&rdquo;
-    </blockquote>
-  </div>
-</section>
-
-<hr class="divider" />
-
-<!-- CONTACT SECTION -->
-<section id="contact" aria-labelledby="contact-h">
-  <div class="section-wrapper">
-    <div class="contact-grid">
-
-      <!-- Left Column -->
-      <div>
-        <p class="section-label reveal">Get In Touch</p>
-        <h2 id="contact-h" class="contact-headline reveal reveal-d1">
-          LET&rsquo;S BUILD<br>SOMETHING<br><span class="ca">MEANINGFUL.</span>
-        </h2>
-        <p class="contact-sub reveal reveal-d2">
-          Terbuka untuk berdiskusi, berkolaborasi, belajar bersama, dan membangun sesuatu yang bermanfaat.
-        </p>
-        <a href="mailto:ghofursalim2@gmail.com" class="btn-primary reveal reveal-d3" aria-label="Kirim email ke ghofursalim2@gmail.com">
-          GET IN TOUCH &rarr;
-        </a>
-      </div>
-
-      <!-- Right Column -->
-      <div class="contact-right">
-        <p class="contact-lbl reveal">Email Address</p>
-        
-        <div class="contact-email-wrap reveal reveal-d1">
-          <a href="mailto:ghofursalim2@gmail.com" class="contact-email-link" id="emailText">
-            ghofursalim2@gmail.com
-          </a>
-          <button id="copyEmailBtn" class="copy-btn" type="button" title="Salin alamat email" aria-label="Salin alamat email">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            <span id="copyBtnLabel">Salin</span>
-          </button>
-        </div>
-
-        <div class="contact-details reveal reveal-d2">
-          <div>
-            <p class="contact-detail-lbl">Lokasi</p>
-            <p class="contact-detail-val">Surabaya, Indonesia</p>
-          </div>
-          <div>
-            <p class="contact-detail-lbl">Status Akademik</p>
-            <p class="contact-detail-val">
-              <span class="status-dot"></span>
-              Mahasiswa Aktif &mdash; RPL ITS (Angkatan 2025)
+            <p class="hero-intro ha ha-5">
+              Saya tertarik pada bagaimana teknologi dapat diterjemahkan menjadi
+              <em>solusi yang nyata, terstruktur, dan bermanfaat.</em>
             </p>
+
+            <div class="hero-cta ha ha-6">
+              <a href="#contact" class="btn-primary" aria-label="Navigasi ke bagian kontak">
+                HUBUNGI SAYA &rarr;
+              </a>
+              <a href="#project" class="btn-secondary" aria-label="Lihat featured project">
+                VIEW PROJECT PLAN &rarr;
+              </a>
+            </div>
           </div>
-          <div>
-            <p class="contact-detail-lbl">Minat &amp; Passion</p>
-            <p class="contact-detail-val">Mengeksplorasi Hal Baru &amp; Rekayasa Perangkat Lunak</p>
+
+          <!-- Right Column: Editorial Cutout & Geometric Accent -->
+          <div class="hero-right" aria-hidden="true">
+            <div class="hero-circle-bg"></div>
+            <div class="hero-circle-solid"></div>
+            <div class="hero-img-wrap ha-r">
+              <img src="Asset/luqman-hero-portrait.png"
+                alt="Abdul Ghofur Luqman Salim berbicara di depan microphone mengenakan blazer ITS" class="hero-photo"
+                loading="eager" />
+            </div>
+            <span class="hero-overlay-label tl">ITS Surabaya &mdash; 2026</span>
+            <span class="hero-overlay-label br">RPL &mdash; Angkatan 2025</span>
           </div>
+
         </div>
       </div>
 
+      <!-- Scroll Indicator -->
+      <div class="scroll-ind" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- PERSONAL PHILOSOPHY SECTION (INTRODUCTORY NARRATIVE) -->
+    <section id="philosophy" aria-labelledby="phil-h">
+      <div class="section-wrapper">
+        <div class="phil-header reveal">
+          <div class="phil-badge">Kenal Lebih Dekat Dengan Sosok LUQMAN</div>
+          <p class="phil-label">Personal Philosophy</p>
+        </div>
+        <blockquote class="phil-quote reveal reveal-d1" id="phil-h">
+          <span class="phil-mark" aria-hidden="true">&ldquo;</span>
+          &ldquo;Bukan soal siapa<br>yang paling bersinar,<br>
+          <span class="phil-accent">tetapi bagaimana kita</span><br>
+          membagi terang ke sekitar.&rdquo;
+        </blockquote>
+        <div class="phil-caption reveal reveal-d2">
+          <span class="phil-divider"></span>
+          <p>
+            Sebuah kompas nilai yang mendasari integritas, cara berpikir terstruktur,
+            serta semangat untuk menghadirkan teknologi yang memberikan dampak nyata dan bermanfaat bagi sesama.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ABOUT SECTION -->
+    <section id="about" aria-labelledby="about-h">
+      <div class="section-wrapper">
+        <p class="section-label reveal">01 &mdash; About Me</p>
+        <div class="about-grid">
+
+          <!-- Left Column: Title & Photo 2 -->
+          <div>
+            <h2 id="about-h" class="about-headline reveal reveal-d1">
+              GET TO KNOW<br>THE PERSON<br>BEHIND<br>THE CODE.
+            </h2>
+            <div class="reveal reveal-d2">
+              <div class="about-photo-wrap">
+                <img src="Asset/luqman-about-web.jpg"
+                  alt="Abdul Ghofur Luqman Salim berdiri di depan gedung Institut Teknologi Sepuluh Nopember"
+                  class="about-photo" loading="lazy" />
+              </div>
+              <p class="about-photo-cap">Institut Teknologi Sepuluh Nopember, Surabaya</p>
+            </div>
+          </div>
+
+          <!-- Right Column: Storytelling Content -->
+          <div>
+            <div class="about-p reveal reveal-d1">
+              <p class="about-num">001 &mdash; LATAR BELAKANG</p>
+              <p>
+                Sejak kecil, saya tumbuh di lingkungan yang dekat dengan dunia teknologi dan informatika.
+                <em>Ibu saya merupakan dosen Informatika di ITATS</em>, sementara
+                <em>ayah saya adalah CEO dan Founder Vpoint Solusindo</em>. Dari keduanya, saya mengenal teknologi
+                melalui dua sudut pandang: akademis dan industri. Ibu memperkenalkan saya pada konsep, logika,
+                dan cara berpikir sistematis, sedangkan ayah menunjukkan bagaimana teknologi diterapkan untuk
+                menjawab kebutuhan nyata.
+              </p>
+            </div>
+
+            <div class="about-p reveal reveal-d2">
+              <p class="about-num">002 &mdash; PENGAMATAN &amp; MINAT</p>
+              <p>
+                Kedekatan tersebut membuat saya tidak hanya tertarik menggunakan teknologi, tetapi juga memahami
+                bagaimana sebuah perangkat lunak diciptakan. Saya mulai tertarik pada proses bagaimana suatu
+                permasalahan diidentifikasi, <em>solusi dirancang</em>, kemudian dikembangkan menjadi sebuah produk
+                yang dapat digunakan dan memberikan manfaat.
+              </p>
+            </div>
+
+            <div class="about-p reveal reveal-d3">
+              <p class="about-num">003 &mdash; TUJUAN &amp; AMBISI</p>
+              <p>
+                Bagi saya, <em>Rekayasa Perangkat Lunak menjadi bidang yang mempertemukan logika, kreativitas,
+                  dan kemampuan untuk menciptakan solusi bagi berbagai permasalahan</em>. Dari sinilah alasan saya
+                memilih jurusan Rekayasa Perangkat Lunak. Saya berharap masa studi ini tidak hanya menjadi perjalanan
+                untuk mengembangkan kemampuan, tetapi juga menjadi proses untuk menghasilkan karya yang bermanfaat
+                dan menjadikan saya pribadi yang dapat memberi manfaat bagi sesama.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- HOW I WORK SECTION -->
+    <section id="work" aria-labelledby="work-h">
+      <div class="section-wrapper">
+        <p class="section-label reveal">02 &mdash; How I Work</p>
+        <h2 id="work-h" class="work-headline reveal reveal-d1">
+          STRENGTHS &amp;<br>GROWTH AREAS
+        </h2>
+
+        <div class="work-grid">
+
+          <!-- Strengths Column -->
+          <div>
+            <p class="work-col-label">Strengths</p>
+
+            <div class="work-item reveal reveal-d1">
+              <p class="work-num">01 &mdash;</p>
+              <h3 class="work-title">Adaptive</h3>
+              <p class="work-desc">Saya mampu menyesuaikan diri dengan lingkungan, tools, dan tantangan baru.</p>
+            </div>
+
+            <div class="work-item reveal reveal-d2">
+              <p class="work-num">02 &mdash;</p>
+              <h3 class="work-title">Solutive</h3>
+              <p class="work-desc">Saya terbiasa melihat permasalahan sebagai sesuatu yang perlu dipahami dan dicari
+                solusinya.</p>
+            </div>
+
+            <div class="work-item reveal reveal-d3">
+              <p class="work-num">03 &mdash;</p>
+              <h3 class="work-title">Disciplined &amp; Responsible</h3>
+              <p class="work-desc">Saya berusaha menyelesaikan tanggung jawab yang telah saya ambil dengan konsisten.
+              </p>
+            </div>
+
+            <div class="work-item reveal reveal-d4">
+              <p class="work-num">04 &mdash;</p>
+              <h3 class="work-title">Curious</h3>
+              <p class="work-desc">Saya senang mengeksplorasi hal baru dan mempelajari sesuatu di luar zona nyaman.</p>
+            </div>
+          </div>
+
+          <!-- Growth Areas Column -->
+          <div>
+            <p class="work-col-label">Growth Areas</p>
+
+            <div class="work-item reveal reveal-d1">
+              <p class="work-num">01 &mdash;</p>
+              <h3 class="work-title">Deep Consideration</h3>
+              <p class="work-desc">Saya cenderung mempertimbangkan banyak kemungkinan sebelum mengambil keputusan
+                penting.</p>
+            </div>
+
+            <div class="work-item reveal reveal-d2">
+              <p class="work-num">02 &mdash;</p>
+              <h3 class="work-title">Perfectionism</h3>
+              <p class="work-desc">Saya terkadang terlalu mengejar hasil yang sempurna dan sedang belajar
+                menyeimbangkannya dengan efisiensi dan prioritas.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="work-footer reveal">&ldquo;Self-awareness is part of the process.&rdquo;</p>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT SECTION -->
+    <section id="project" aria-labelledby="project-h">
+      <div class="section-wrapper">
+        <p class="section-label reveal">03 &mdash; Featured Project</p>
+
+        <div class="project-top">
+          <div>
+            <div class="project-badge reveal">Planned Project &mdash; In Development Plan</div>
+            <h2 id="project-h" class="project-headline reveal reveal-d1">
+              RETAIL INVENTORY<br>MANAGEMENT<br>SYSTEM
+            </h2>
+          </div>
+          <div class="reveal reveal-d2">
+            <p class="project-subtitle">SaaS-Based Mobile Application</p>
+            <p class="project-intro">
+              Sebagai langkah nyata setelah menyelesaikan mata kuliah Pemrograman Perangkat Bergerak,
+              saya berencana mengembangkan sebuah Retail Inventory Management System berbasis SaaS &mdash;
+              aplikasi mobile yang dirancang untuk membantu pemilik dan penjaga warung kecil dalam
+              mengelola stok barang, mencatat transaksi harian, serta memantau laporan laba-rugi secara real-time.
+            </p>
+            <div class="tags">
+              <span class="tag">Mobile App</span>
+              <span class="tag">SaaS Multi-Tenant</span>
+              <span class="tag">Barcode Scanner</span>
+              <span class="tag">Cloud Storage</span>
+              <span class="tag">UMKM Digitalization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mockup-section">
+
+          <!-- Interactive Phone Mockup -->
+          <div class="phone-mockup reveal">
+            <div class="phone-frame" role="region" aria-label="Interactive App Mockup Preview">
+              <div class="phone-notch" aria-hidden="true"></div>
+              <div class="phone-screen" id="mockupScreen">
+
+                <!-- Toast Alert inside App -->
+                <div class="app-toast" id="appToast">Mode Barcode Scanner Siap Digunakan</div>
+
+                <!-- App Header -->
+                <div class="app-hdr">
+                  <div class="app-hdr-top">
+                    <span class="app-hdr-label" id="mockupViewTitle">Dashboard Toko</span>
+                    <span style="font-size:7px;opacity:.7">v1.0-dev</span>
+                  </div>
+                  <div class="app-hdr-title">Warung Berkah &#127978;</div>
+
+                  <div class="app-rev-card">
+                    <div>
+                      <div class="app-rev-val">Rp 4.250.000</div>
+                      <div class="app-rev-lbl">Pendapatan Hari Ini</div>
+                    </div>
+                    <div class="app-rev-badge">+12.4%</div>
+                  </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="app-stats">
+                  <div class="app-stat">
+                    <div class="app-stat-val">148</div>
+                    <div class="app-stat-lbl">Total Item</div>
+                  </div>
+                  <div class="app-stat">
+                    <div class="app-stat-val">32</div>
+                    <div class="app-stat-lbl">Transaksi</div>
+                  </div>
+                  <div class="app-stat">
+                    <div class="app-stat-val" style="color:#E85D04">5</div>
+                    <div class="app-stat-lbl">Stok Habis</div>
+                  </div>
+                </div>
+
+                <!-- Content Area (Dynamic based on Tab) -->
+                <div class="app-sec-ttl" id="mockupListHeader">Stok Barang Terkini</div>
+
+                <div class="app-list" id="mockupList">
+                  <div class="app-row">
+                    <div>
+                      <div class="app-item-name">Indomie Goreng Spesial</div>
+                      <div class="app-item-sku">#SKU-001 &bull; Makanan</div>
+                    </div>
+                    <div class="app-stock stock-ok"><span class="dot dot-ok"></span>142 pcs</div>
+                  </div>
+                  <div class="app-row">
+                    <div>
+                      <div class="app-item-name">Aqua Mineral 600ml</div>
+                      <div class="app-item-sku">#SKU-002 &bull; Minuman</div>
+                    </div>
+                    <div class="app-stock stock-ok"><span class="dot dot-ok"></span>86 pcs</div>
+                  </div>
+                  <div class="app-row">
+                    <div>
+                      <div class="app-item-name">Teh Botol Sosro 350ml</div>
+                      <div class="app-item-sku">#SKU-003 &bull; Minuman</div>
+                    </div>
+                    <div class="app-stock stock-low"><span class="dot dot-low"></span>3 pcs</div>
+                  </div>
+                  <div class="app-row">
+                    <div>
+                      <div class="app-item-name">Chitato Sapi Panggang</div>
+                      <div class="app-item-sku">#SKU-004 &bull; Snack</div>
+                    </div>
+                    <div class="app-stock stock-ok"><span class="dot dot-ok"></span>57 pcs</div>
+                  </div>
+                </div>
+
+                <!-- Scan Action Button -->
+                <button class="app-scan-btn" id="appScanBtn" type="button" aria-label="Pindai barcode">
+                  <span style="font-size:12px;color:white" aria-hidden="true">&#9638;</span>
+                  <span class="app-scan-lbl">SCAN BARCODE</span>
+                </button>
+
+                <!-- Bottom Navigation Bar -->
+                <div class="app-bnav" role="tablist">
+                  <button class="app-bnav-item on" data-tab="dashboard" role="tab" aria-selected="true"
+                    aria-label="Tab Dashboard">
+                    <span class="app-bnav-icon" aria-hidden="true">&#8962;</span>
+                    <span class="app-bnav-lbl">Dashboard</span>
+                  </button>
+                  <button class="app-bnav-item" data-tab="inventory" role="tab" aria-selected="false"
+                    aria-label="Tab Inventori">
+                    <span class="app-bnav-icon" aria-hidden="true">&#9776;</span>
+                    <span class="app-bnav-lbl">Inventori</span>
+                  </button>
+                  <button class="app-bnav-item" data-tab="transaction" role="tab" aria-selected="false"
+                    aria-label="Tab Transaksi">
+                    <span class="app-bnav-icon" aria-hidden="true">&#10022;</span>
+                    <span class="app-bnav-lbl">Transaksi</span>
+                  </button>
+                  <button class="app-bnav-item" data-tab="report" role="tab" aria-selected="false"
+                    aria-label="Tab Laporan">
+                    <span class="app-bnav-icon" aria-hidden="true">&#9783;</span>
+                    <span class="app-bnav-lbl">Laporan</span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Detailed Architecture Info -->
+          <div>
+            <p style="font-size:.92rem;line-height:1.8;color:var(--secondary);margin-bottom:1.5rem" class="reveal">
+              Aplikasi ini hadir sebagai solusi praktis atas permasalahan pencatatan manual yang rentan selisih dan
+              kerugian,
+              sekaligus memberikan kemudahan akses fitur seperti barcode scanner langsung dari genggaman.
+            </p>
+            <p style="font-size:.92rem;line-height:1.8;color:var(--secondary);margin-bottom:3rem"
+              class="reveal reveal-d1">
+              Selain mengasah kemampuan pemrograman mobile, arsitektur multi-tenant, dan integrasi cloud storage,
+              proyek ini menjadi ajang bagi saya untuk menghadirkan teknologi yang relevan, terjangkau, dan berdampak
+              langsung pada digitalisasi usaha mikro di sekitar kita.
+            </p>
+
+            <div class="proj-info-grid reveal reveal-d2">
+              <div class="proj-info-item">
+                <p class="proj-info-lbl">Problem</p>
+                <p class="proj-info-val">Pencatatan stok manual rentan terhadap kesalahan hitung dan selisih pembukuan
+                  harian.</p>
+              </div>
+              <div class="proj-info-item">
+                <p class="proj-info-lbl">Solution</p>
+                <p class="proj-info-val">Aplikasi mobile terintegrasi untuk manajemen inventory dan pencatatan transaksi
+                  kasir kilat.</p>
+              </div>
+              <div class="proj-info-item">
+                <p class="proj-info-lbl">Target Users</p>
+                <p class="proj-info-val">Pemilik dan penjaga warung kelontong / pelaku usaha mikro (UMKM).</p>
+              </div>
+              <div class="proj-info-item">
+                <p class="proj-info-lbl">Core Features</p>
+                <div class="proj-info-val">
+                  <ul>
+                    <li>Inventory management &amp; stock alert</li>
+                    <li>Transaction recording (POS mobile)</li>
+                    <li>Barcode scanner via camera</li>
+                    <li>Profit &amp; loss reporting real-time</li>
+                    <li>Cloud synchronization</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="proj-info-item">
+                <p class="proj-info-lbl">Tech Direction</p>
+                <div class="proj-info-val">
+                  <ul>
+                    <li>Mobile development (Modern UI)</li>
+                    <li>SaaS &amp; Multi-Tenant architecture</li>
+                    <li>Cloud storage &amp; offline-first sync</li>
+                    <li>RESTful API integration</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="proj-info-item">
+                <p class="proj-info-lbl">Impact</p>
+                <p class="proj-info-val">Membantu usaha mikro melakukan tata kelola inventori secara lebih praktis,
+                  rapi, dan terhindar dari kerugian.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" aria-labelledby="contact-h">
+      <div class="section-wrapper">
+        <div class="contact-grid">
+
+          <!-- Left Column -->
+          <div>
+            <p class="section-label reveal">Get In Touch</p>
+            <h2 id="contact-h" class="contact-headline reveal reveal-d1">
+              LET&rsquo;S BUILD<br>SOMETHING<br><span class="ca">MEANINGFUL.</span>
+            </h2>
+            <p class="contact-sub reveal reveal-d2">
+              Terbuka untuk berdiskusi, berkolaborasi, belajar bersama, dan membangun sesuatu yang bermanfaat.
+            </p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ghofursalim2@gmail.com&su=Diskusi%20dan%20Kolaborasi%20-%20Portofolio%20Luqman"
+              target="_blank" rel="noopener noreferrer" class="btn-primary reveal reveal-d3" id="getInTouchBtn"
+              aria-label="Kirim email via Gmail ke ghofursalim2@gmail.com">
+              GET IN TOUCH &rarr;
+            </a>
+          </div>
+
+          <!-- Right Column -->
+          <div class="contact-right">
+            <p class="contact-lbl reveal">Email Address</p>
+
+            <div class="contact-email-wrap reveal reveal-d1">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ghofursalim2@gmail.com&su=Diskusi%20dan%20Kolaborasi%20-%20Portofolio%20Luqman"
+                target="_blank" rel="noopener noreferrer" class="contact-email-link" id="emailText"
+                title="Buka di Gmail">
+                ghofursalim2@gmail.com
+              </a>
+              <button id="copyEmailBtn" class="copy-btn" type="button" title="Salin alamat email"
+                aria-label="Salin alamat email">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copyBtnLabel">Salin</span>
+              </button>
+            </div>
+
+            <div class="contact-details reveal reveal-d2">
+              <div>
+                <p class="contact-detail-lbl">Lokasi</p>
+                <p class="contact-detail-val">Surabaya, Indonesia</p>
+              </div>
+              <div>
+                <p class="contact-detail-lbl">Status Akademik</p>
+                <p class="contact-detail-val">
+                  <span class="status-dot"></span>
+                  Mahasiswa Aktif &mdash; RPL ITS (Angkatan 2025)
+                </p>
+              </div>
+              <div>
+                <p class="contact-detail-lbl">Minat &amp; Passion</p>
+                <p class="contact-detail-val">Mengeksplorasi Hal Baru &amp; Rekayasa Perangkat Lunak</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="section-wrapper">
+      <div class="footer-inner">
+        <p class="footer-name">Abdul Ghofur Luqman Salim</p>
+        <p class="footer-center">Software Engineering Student &mdash; ITS</p>
+        <p class="footer-copy">&copy; 2026</p>
+      </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-</main>
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    /* === NAVBAR SCROLL EFFECT === */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 24);
+    }, { passive: true });
 
-<!-- FOOTER -->
-<footer role="contentinfo">
-  <div class="section-wrapper">
-    <div class="footer-inner">
-      <p class="footer-name">Abdul Ghofur Luqman Salim</p>
-      <p class="footer-center">Software Engineering Student &mdash; ITS</p>
-      <p class="footer-copy">&copy; 2026</p>
-    </div>
-  </div>
-</footer>
+    /* === MOBILE MENU TOGGLE === */
+    const toggle = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileMenu');
 
-<!-- JAVASCRIPT LOGIC -->
-<script>
-  /* === NAVBAR SCROLL EFFECT === */
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 24);
-  }, { passive: true });
-
-  /* === MOBILE MENU TOGGLE === */
-  const toggle = document.getElementById('navToggle');
-  const menu = document.getElementById('mobileMenu');
-  
-  toggle.addEventListener('click', () => {
-    const isOpen = menu.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', isOpen);
-    const spans = toggle.querySelectorAll('span');
-    if (isOpen) {
-      spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-      spans[1].style.opacity = '0';
-      spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-    } else {
-      spans[0].style.transform = '';
-      spans[1].style.opacity = '1';
-      spans[2].style.transform = '';
-    }
-  });
-
-  const closeMobileMenu = () => {
-    menu.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-    toggle.querySelectorAll('span').forEach(s => {
-      s.style.transform = '';
-      s.style.opacity = '1';
-    });
-  };
-
-  document.querySelectorAll('.mob-link').forEach(link => {
-    link.addEventListener('click', closeMobileMenu);
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!nav.contains(e.target) && !menu.contains(e.target)) {
-      closeMobileMenu();
-    }
-  });
-
-  /* === INTERSECTION OBSERVER FOR SCROLL REVEAL === */
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      const spans = toggle.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = '';
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    const closeMobileMenu = () => {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.querySelectorAll('span').forEach(s => {
+        s.style.transform = '';
+        s.style.opacity = '1';
+      });
+    };
 
-  /* === ACTIVE SECTION NAVIGATION HIGHLIGHT === */
-  const sections = document.querySelectorAll('section[id]');
-  const desktopLinks = document.querySelectorAll('.nav-links a');
-  const mobileLinks = document.querySelectorAll('.mobile-menu a');
+    document.querySelectorAll('.mob-link').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
 
-  const highlightNav = () => {
-    const scrollPos = window.scrollY + 100;
-    sections.forEach(section => {
-      const top = section.offsetTop;
-      const height = section.offsetHeight;
-      const id = section.getAttribute('id');
-      if (scrollPos >= top && scrollPos < top + height) {
-        desktopLinks.forEach(link => {
-          link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-        });
-        mobileLinks.forEach(link => {
-          link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-        });
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && !menu.contains(e.target)) {
+        closeMobileMenu();
       }
     });
-  };
 
-  window.addEventListener('scroll', highlightNav, { passive: true });
+    /* === INTERSECTION OBSERVER FOR SCROLL REVEAL === */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-  /* === SMOOTH SCROLL WITH OFFSET === */
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        e.preventDefault();
-        const headerOffset = 64;
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-  /* === COPY EMAIL BUTTON INTERACTION === */
-  const copyBtn = document.getElementById('copyEmailBtn');
-  const copyLabel = document.getElementById('copyBtnLabel');
-  if (copyBtn && copyLabel) {
-    copyBtn.addEventListener('click', () => {
-      const email = 'ghofursalim2@gmail.com';
-      navigator.clipboard.writeText(email).then(() => {
-        copyLabel.textContent = 'Disalin!';
-        copyBtn.style.borderColor = 'var(--accent)';
-        copyBtn.style.color = 'var(--accent)';
-        copyBtn.style.background = 'var(--accent-light)';
-        setTimeout(() => {
-          copyLabel.textContent = 'Salin';
-          copyBtn.style.borderColor = '';
-          copyBtn.style.color = '';
-          copyBtn.style.background = '';
-        }, 2200);
-      }).catch(() => {
-        window.location.href = `mailto:${email}`;
+    /* === ACTIVE SECTION NAVIGATION HIGHLIGHT === */
+    const sections = document.querySelectorAll('section[id]');
+    const desktopLinks = document.querySelectorAll('.nav-links a');
+    const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+    const highlightNav = () => {
+      const scrollPos = window.scrollY + 100;
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
+        if (scrollPos >= top && scrollPos < top + height) {
+          desktopLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+          });
+          mobileLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+          });
+        }
+      });
+    };
+
+    window.addEventListener('scroll', highlightNav, { passive: true });
+
+    /* === SMOOTH SCROLL WITH OFFSET === */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          const headerOffset = 64;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
       });
     });
-  }
 
-  /* === INTERACTIVE PHONE MOCKUP TABS & SCANNER === */
-  const mockTabs = document.querySelectorAll('.app-bnav-item');
-  const mockViewTitle = document.getElementById('mockupViewTitle');
-  const mockListHeader = document.getElementById('mockupListHeader');
-  const mockList = document.getElementById('mockupList');
-  const appScanBtn = document.getElementById('appScanBtn');
-  const appToast = document.getElementById('appToast');
-
-  const showToast = (message) => {
-    if (!appToast) return;
-    appToast.textContent = message;
-    appToast.classList.add('show');
-    setTimeout(() => {
-      appToast.classList.remove('show');
-    }, 2400);
-  };
-
-  if (appScanBtn) {
-    appScanBtn.addEventListener('click', () => {
-      showToast('Kamera Barcode Scanner Aktif');
-    });
-  }
-
-  const mockTabContent = {
-    dashboard: {
-      title: 'Dashboard Toko',
-      header: 'Stok Barang Terkini',
-      items: [
-        { name: 'Indomie Goreng Spesial', sku: '#SKU-001 • Makanan', stock: '142 pcs', ok: true },
-        { name: 'Aqua Mineral 600ml', sku: '#SKU-002 • Minuman', stock: '86 pcs', ok: true },
-        { name: 'Teh Botol Sosro 350ml', sku: '#SKU-003 • Minuman', stock: '3 pcs', ok: false },
-        { name: 'Chitato Sapi Panggang', sku: '#SKU-004 • Snack', stock: '57 pcs', ok: true }
-      ]
-    },
-    inventory: {
-      title: 'Katalog Inventori',
-      header: 'Semua Produk (148 Item)',
-      items: [
-        { name: 'Kopi Kapal Api 65g', sku: '#SKU-005 • Minuman', stock: '94 pcs', ok: true },
-        { name: 'Minyak Goreng 1L', sku: '#SKU-006 • Sembako', stock: '2 pcs', ok: false },
-        { name: 'Beras Premium 5kg', sku: '#SKU-007 • Sembako', stock: '18 sak', ok: true },
-        { name: 'Telur Ayam 1kg', sku: '#SKU-008 • Sembako', stock: '45 pack', ok: true }
-      ]
-    },
-    transaction: {
-      title: 'Riwayat Transaksi',
-      header: 'Transaksi Hari Ini (32)',
-      items: [
-        { name: 'Nota #TRX-9482', sku: '14:28 WIB • 4 item', stock: 'Rp 64.000', ok: true },
-        { name: 'Nota #TRX-9481', sku: '13:50 WIB • 2 item', stock: 'Rp 15.500', ok: true },
-        { name: 'Nota #TRX-9480', sku: '12:15 WIB • 7 item', stock: 'Rp 112.000', ok: true },
-        { name: 'Nota #TRX-9479', sku: '11:05 WIB • 1 item', stock: 'Rp 6.000', ok: true }
-      ]
-    },
-    report: {
-      title: 'Laporan Finansial',
-      header: 'Ringkasan Laba / Rugi',
-      items: [
-        { name: 'Gross Revenue (Bulan Ini)', sku: '1-6 Sep 2026', stock: 'Rp 28.400.000', ok: true },
-        { name: 'Estimasi Laba Bersih', sku: 'Margin 18.2%', stock: 'Rp 5.168.000', ok: true },
-        { name: 'Biaya Restock Barang', sku: 'Supplier Utama', stock: 'Rp 23.232.000', ok: true },
-        { name: 'Selisih / Waste', sku: 'Toleransi aman (0.1%)', stock: 'Rp 28.000', ok: true }
-      ]
-    }
-  };
-
-  mockTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      mockTabs.forEach(t => {
-        t.classList.remove('on');
-        t.setAttribute('aria-selected', 'false');
+    /* === COPY EMAIL BUTTON INTERACTION === */
+    const copyBtn = document.getElementById('copyEmailBtn');
+    const copyLabel = document.getElementById('copyBtnLabel');
+    if (copyBtn && copyLabel) {
+      copyBtn.addEventListener('click', () => {
+        const email = 'ghofursalim2@gmail.com';
+        navigator.clipboard.writeText(email).then(() => {
+          copyLabel.textContent = 'Disalin!';
+          copyBtn.style.borderColor = 'var(--accent)';
+          copyBtn.style.color = 'var(--accent)';
+          copyBtn.style.background = 'var(--accent-light)';
+          setTimeout(() => {
+            copyLabel.textContent = 'Salin';
+            copyBtn.style.borderColor = '';
+            copyBtn.style.color = '';
+            copyBtn.style.background = '';
+          }, 2200);
+        }).catch(() => {
+          window.location.href = `mailto:${email}`;
+        });
       });
-      tab.classList.add('on');
-      tab.setAttribute('aria-selected', 'true');
+    }
 
-      const tabKey = tab.getAttribute('data-tab');
-      const data = mockTabContent[tabKey];
-      if (data) {
-        mockViewTitle.textContent = data.title;
-        mockListHeader.textContent = data.header;
-        mockList.innerHTML = data.items.map(item => `
+    /* === INTERACTIVE PHONE MOCKUP TABS & SCANNER === */
+    const mockTabs = document.querySelectorAll('.app-bnav-item');
+    const mockViewTitle = document.getElementById('mockupViewTitle');
+    const mockListHeader = document.getElementById('mockupListHeader');
+    const mockList = document.getElementById('mockupList');
+    const appScanBtn = document.getElementById('appScanBtn');
+    const appToast = document.getElementById('appToast');
+
+    const showToast = (message) => {
+      if (!appToast) return;
+      appToast.textContent = message;
+      appToast.classList.add('show');
+      setTimeout(() => {
+        appToast.classList.remove('show');
+      }, 2400);
+    };
+
+    if (appScanBtn) {
+      appScanBtn.addEventListener('click', () => {
+        showToast('Kamera Barcode Scanner Aktif');
+      });
+    }
+
+    const mockTabContent = {
+      dashboard: {
+        title: 'Dashboard Toko',
+        header: 'Stok Barang Terkini',
+        items: [
+          { name: 'Indomie Goreng Spesial', sku: '#SKU-001 • Makanan', stock: '142 pcs', ok: true },
+          { name: 'Aqua Mineral 600ml', sku: '#SKU-002 • Minuman', stock: '86 pcs', ok: true },
+          { name: 'Teh Botol Sosro 350ml', sku: '#SKU-003 • Minuman', stock: '3 pcs', ok: false },
+          { name: 'Chitato Sapi Panggang', sku: '#SKU-004 • Snack', stock: '57 pcs', ok: true }
+        ]
+      },
+      inventory: {
+        title: 'Katalog Inventori',
+        header: 'Semua Produk (148 Item)',
+        items: [
+          { name: 'Kopi Kapal Api 65g', sku: '#SKU-005 • Minuman', stock: '94 pcs', ok: true },
+          { name: 'Minyak Goreng 1L', sku: '#SKU-006 • Sembako', stock: '2 pcs', ok: false },
+          { name: 'Beras Premium 5kg', sku: '#SKU-007 • Sembako', stock: '18 sak', ok: true },
+          { name: 'Telur Ayam 1kg', sku: '#SKU-008 • Sembako', stock: '45 pack', ok: true }
+        ]
+      },
+      transaction: {
+        title: 'Riwayat Transaksi',
+        header: 'Transaksi Hari Ini (32)',
+        items: [
+          { name: 'Nota #TRX-9482', sku: '14:28 WIB • 4 item', stock: 'Rp 64.000', ok: true },
+          { name: 'Nota #TRX-9481', sku: '13:50 WIB • 2 item', stock: 'Rp 15.500', ok: true },
+          { name: 'Nota #TRX-9480', sku: '12:15 WIB • 7 item', stock: 'Rp 112.000', ok: true },
+          { name: 'Nota #TRX-9479', sku: '11:05 WIB • 1 item', stock: 'Rp 6.000', ok: true }
+        ]
+      },
+      report: {
+        title: 'Laporan Finansial',
+        header: 'Ringkasan Laba / Rugi',
+        items: [
+          { name: 'Gross Revenue (Bulan Ini)', sku: '1-6 Sep 2026', stock: 'Rp 28.400.000', ok: true },
+          { name: 'Estimasi Laba Bersih', sku: 'Margin 18.2%', stock: 'Rp 5.168.000', ok: true },
+          { name: 'Biaya Restock Barang', sku: 'Supplier Utama', stock: 'Rp 23.232.000', ok: true },
+          { name: 'Selisih / Waste', sku: 'Toleransi aman (0.1%)', stock: 'Rp 28.000', ok: true }
+        ]
+      }
+    };
+
+    mockTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        mockTabs.forEach(t => {
+          t.classList.remove('on');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('on');
+        tab.setAttribute('aria-selected', 'true');
+
+        const tabKey = tab.getAttribute('data-tab');
+        const data = mockTabContent[tabKey];
+        if (data) {
+          mockViewTitle.textContent = data.title;
+          mockListHeader.textContent = data.header;
+          mockList.innerHTML = data.items.map(item => `
           <div class="app-row">
             <div>
               <div class="app-item-name">${item.name}</div>
@@ -2266,11 +2515,12 @@
             </div>
           </div>
         `).join('');
-        showToast(`Beralih ke tab: ${data.title}`);
-      }
+          showToast(`Beralih ke tab: ${data.title}`);
+        }
+      });
     });
-  });
-</script>
 
+  </script>
 </body>
+
 </html>
