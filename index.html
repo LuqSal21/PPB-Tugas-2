@@ -268,29 +268,29 @@
       border-top: 1px solid var(--border);
     }
 
-    /* === HERO SECTION === */
+    /* === HERO & PHILOSOPHY UNIFIED EDITORIAL SPREAD === */
     #home {
       padding-top: 68px;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
       position: relative;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      align-items: center;
-      min-height: calc(100vh - 68px);
-      gap: 3rem;
+      grid-template-columns: 1.12fr 0.88fr;
+      align-items: start;
+      gap: 3.5rem;
+      position: relative;
     }
 
     .hero-left {
-      padding: 4rem 0 3rem;
+      padding: 3.5rem 0 5rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+    }
+
+    .hero-content-block {
+      margin-bottom: 3.5rem;
     }
 
     .hero-eyebrow {
@@ -320,7 +320,7 @@
       color: var(--primary);
       text-transform: uppercase;
       margin-bottom: 2rem;
-      font-size: clamp(3rem, 6.4vw, 6.8rem);
+      font-size: clamp(3rem, 6.2vw, 6.6rem);
     }
 
     .hero-sub {
@@ -436,42 +436,148 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     }
 
-    /* Hero Right - Editorial Cutout Composition */
-    .hero-right {
+    /* Transition Divider inside Left Column */
+    .hero-phil-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+      margin: 1.5rem 0 3.5rem;
+    }
+
+    /* Philosophy inside Left Column */
+    #philosophy {
+      padding: 0;
+      overflow: visible;
+      background: transparent;
       position: relative;
+    }
+
+    .phil-header {
+      margin-bottom: 2rem;
+    }
+
+    .phil-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-light);
+      border: 1px solid rgba(8, 127, 104, 0.25);
+      padding: .45rem 1.05rem;
+      border-radius: 2px;
+      margin-bottom: 1.25rem;
+    }
+
+    .phil-label {
+      font-size: .65rem;
+      font-weight: 600;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    .phil-label::before {
+      content: '';
+      width: 28px;
+      height: 1.5px;
+      background: var(--accent);
+    }
+
+    .phil-quote {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(2.2rem, 4.4vw, 4.2rem);
+      line-height: 1.08;
+      letter-spacing: -.03em;
+      color: var(--primary);
+      position: relative;
+      margin-bottom: 2.25rem;
+    }
+
+    .phil-mark {
+      position: absolute;
+      top: -2rem;
+      left: -2.5rem;
+      font-family: var(--font-display);
+      font-size: 14rem;
+      font-weight: 900;
+      color: var(--accent);
+      opacity: .07;
+      line-height: 1;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .phil-accent {
+      color: var(--accent);
+    }
+
+    .phil-caption {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      max-width: 540px;
+    }
+
+    .phil-divider {
+      width: 44px;
+      height: 1.5px;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .phil-caption p {
+      font-size: .9rem;
+      line-height: 1.75;
+      color: var(--secondary);
+    }
+
+    /* Hero Right - Enlarged & Sticky across Hero + Philosophy */
+    .hero-right {
+      position: sticky;
+      top: 76px;
+      height: calc(100vh - 84px);
+      min-height: 680px;
+      max-height: 940px;
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      height: calc(100vh - 68px);
-      min-height: 580px;
       overflow: hidden;
+      margin-bottom: 2rem;
     }
 
     .hero-circle-bg {
       position: absolute;
       border-radius: 50%;
       background: var(--accent);
-      opacity: .09;
-      width: min(52vw, 520px);
-      height: min(52vw, 520px);
-      right: -4%;
+      opacity: .1;
+      width: min(56vw, 560px);
+      height: min(56vw, 560px);
+      right: -6%;
       top: 50%;
       transform: translateY(-50%);
       z-index: 0;
-      filter: blur(24px);
+      filter: blur(28px);
     }
 
     .hero-circle-solid {
       position: absolute;
       border-radius: 50%;
       background: radial-gradient(circle at 35% 35%, #0BA084, var(--accent) 70%, #055A4A 100%);
-      width: min(40vw, 400px);
-      height: min(40vw, 400px);
-      right: 5%;
+      width: min(44vw, 440px);
+      height: min(44vw, 440px);
+      right: 4%;
       top: 50%;
-      transform: translateY(-55%);
+      transform: translateY(-54%);
       z-index: 1;
-      box-shadow: 0 24px 60px rgba(8, 127, 104, 0.28);
+      box-shadow: 0 28px 70px rgba(8, 127, 104, 0.32);
     }
 
     .hero-img-wrap {
@@ -485,13 +591,16 @@
     }
 
     .hero-photo {
-      height: 94%;
+      height: 98%;
       width: auto;
-      max-width: 95%;
+      max-width: 98%;
       object-fit: contain;
       object-position: bottom center;
       display: block;
-      filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.25));
+      filter: drop-shadow(0 24px 45px rgba(0, 0, 0, 0.3));
+      transform: scale(1.15);
+      transform-origin: bottom center;
+      transition: transform .4s ease;
     }
 
     .hero-overlay-label {
@@ -500,22 +609,22 @@
       font-weight: 600;
       letter-spacing: .16em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.92);
       z-index: 3;
-      background: rgba(17, 17, 17, 0.7);
+      background: rgba(17, 17, 17, 0.72);
       backdrop-filter: blur(8px);
       padding: 5px 12px;
       border-radius: 2px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.16);
     }
 
     .hero-overlay-label.tl {
-      top: 2.5rem;
+      top: 2rem;
       left: 1.5rem;
     }
 
     .hero-overlay-label.br {
-      bottom: 4rem;
+      bottom: 3.5rem;
       right: 1.5rem;
       text-align: right;
     }
@@ -1585,28 +1694,30 @@
       }
 
       .hero-left {
-        padding: 4rem 0 1.5rem;
+        padding: 3rem 0 1.5rem;
       }
 
       .hero-right {
-        height: 70vw;
-        max-height: 480px;
-        min-height: 340px;
-        margin-top: 1rem;
+        position: relative;
+        top: 0;
+        height: 75vw;
+        max-height: 520px;
+        min-height: 380px;
+        margin: 1.5rem 0 3rem;
       }
 
       .hero-circle-bg {
         right: 50%;
         transform: translate(50%, -50%);
-        width: 340px;
-        height: 340px;
+        width: 360px;
+        height: 360px;
       }
 
       .hero-circle-solid {
         right: 50%;
         transform: translate(50%, -55%);
-        width: 270px;
-        height: 270px;
+        width: 290px;
+        height: 290px;
       }
 
       .hero-overlay-label.tl {
@@ -1790,53 +1901,82 @@
 
   <main>
 
-    <!-- HERO SECTION -->
-    <section id="home" aria-label="Hero — Abdul Ghofur Luqman Salim">
+    <!-- HERO SECTION & PERSONAL PHILOSOPHY (UNIFIED EDITORIAL SPREAD) -->
+    <section id="home" aria-label="Hero & Personal Philosophy — Abdul Ghofur Luqman Salim">
       <div class="section-wrapper">
         <div class="hero-grid">
 
-          <!-- Left Column: Typography & Bio -->
+          <!-- Left Column: Software Engineering Student + Personal Philosophy -->
           <div class="hero-left">
-            <p class="hero-eyebrow ha ha-1">Software Engineering Student</p>
-            <h1 class="hero-name ha ha-2">
-              ABDUL GHOFUR<br>LUQMAN SALIM
-            </h1>
-            <div class="ha ha-3">
-              <p class="hero-sub"><strong>Mahasiswa Rekayasa Perangkat Lunak</strong></p>
-              <p class="hero-sub">Institut Teknologi Sepuluh Nopember</p>
+
+            <!-- Part 1: Hero Cover & Bio -->
+            <div class="hero-content-block">
+              <p class="hero-eyebrow ha ha-1">Software Engineering Student</p>
+              <h1 class="hero-name ha ha-2">
+                ABDUL GHOFUR<br>LUQMAN SALIM
+              </h1>
+              <div class="ha ha-3">
+                <p class="hero-sub"><strong>Mahasiswa Rekayasa Perangkat Lunak</strong></p>
+                <p class="hero-sub">Institut Teknologi Sepuluh Nopember</p>
+              </div>
+
+              <div class="hero-meta ha ha-4" role="list">
+                <div class="hero-meta-item" role="listitem">
+                  <span class="hero-meta-label">NRP</span>
+                  <span class="hero-meta-value">5053251007</span>
+                </div>
+                <div class="hero-meta-item" role="listitem">
+                  <span class="hero-meta-label">Lokasi</span>
+                  <span class="hero-meta-value">Surabaya, Indonesia</span>
+                </div>
+                <div class="hero-meta-item" role="listitem">
+                  <span class="hero-meta-label">Asal Sekolah</span>
+                  <span class="hero-meta-value">SMAS eLKISI Mojokerto</span>
+                </div>
+              </div>
+
+              <p class="hero-intro ha ha-5">
+                Saya tertarik pada bagaimana teknologi dapat diterjemahkan menjadi
+                <em>solusi yang nyata, terstruktur, dan bermanfaat.</em>
+              </p>
+
+              <div class="hero-cta ha ha-6">
+                <a href="#contact" class="btn-primary" aria-label="Navigasi ke bagian kontak">
+                  HUBUNGI SAYA &rarr;
+                </a>
+                <a href="#project" class="btn-secondary" aria-label="Lihat featured project plan">
+                  VIEW PROJECT PLAN &rarr;
+                </a>
+              </div>
             </div>
 
-            <div class="hero-meta ha ha-4" role="list">
-              <div class="hero-meta-item" role="listitem">
-                <span class="hero-meta-label">NRP</span>
-                <span class="hero-meta-value">5053251007</span>
+            <!-- Hairline Divider -->
+            <div class="hero-phil-divider reveal"></div>
+
+            <!-- Part 2: Personal Philosophy -->
+            <div id="philosophy" class="philosophy-block reveal">
+              <div class="phil-header">
+                <div class="phil-badge">Kenal Lebih Dekat Dengan Sosok LUQMAN</div>
+                <p class="phil-label">Personal Philosophy</p>
               </div>
-              <div class="hero-meta-item" role="listitem">
-                <span class="hero-meta-label">Lokasi</span>
-                <span class="hero-meta-value">Surabaya, Indonesia</span>
-              </div>
-              <div class="hero-meta-item" role="listitem">
-                <span class="hero-meta-label">Asal Sekolah</span>
-                <span class="hero-meta-value">SMAS eLKISI Mojokerto</span>
+              <blockquote class="phil-quote" id="phil-h">
+                <span class="phil-mark" aria-hidden="true">&ldquo;</span>
+                &ldquo;Bukan soal siapa<br>yang paling bersinar,<br>
+                <span class="phil-accent">tetapi bagaimana kita</span><br>
+                membagi terang ke sekitar.&rdquo;
+              </blockquote>
+              <div class="phil-caption">
+                <span class="phil-divider"></span>
+                <p>
+                  Sebuah kompas nilai yang mendasari integritas, cara berpikir terstruktur,
+                  serta semangat untuk menghadirkan teknologi yang memberikan dampak nyata dan bermanfaat bagi sesama.
+                </p>
               </div>
             </div>
 
-            <p class="hero-intro ha ha-5">
-              Saya tertarik pada bagaimana teknologi dapat diterjemahkan menjadi
-              <em>solusi yang nyata, terstruktur, dan bermanfaat.</em>
-            </p>
-
-            <div class="hero-cta ha ha-6">
-              <a href="#contact" class="btn-primary" aria-label="Navigasi ke bagian kontak">
-                HUBUNGI SAYA &rarr;
-              </a>
-              <a href="#project" class="btn-secondary" aria-label="Lihat featured project">
-                VIEW PROJECT PLAN &rarr;
-              </a>
-            </div>
           </div>
 
-          <!-- Right Column: Editorial Cutout & Geometric Accent -->
+          <!-- Right Column: Enlarged Photo 1 Cutout & Emerald Accent (spanning both Hero and Philosophy) -->
           <div class="hero-right" aria-hidden="true">
             <div class="hero-circle-bg"></div>
             <div class="hero-circle-solid"></div>
@@ -1849,35 +1989,6 @@
             <span class="hero-overlay-label br">RPL &mdash; Angkatan 2025</span>
           </div>
 
-        </div>
-      </div>
-
-      <!-- Scroll Indicator -->
-      <div class="scroll-ind" aria-hidden="true">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
-
-    <!-- PERSONAL PHILOSOPHY SECTION (INTRODUCTORY NARRATIVE) -->
-    <section id="philosophy" aria-labelledby="phil-h">
-      <div class="section-wrapper">
-        <div class="phil-header reveal">
-          <div class="phil-badge">Kenal Lebih Dekat Dengan Sosok LUQMAN</div>
-          <p class="phil-label">Personal Philosophy</p>
-        </div>
-        <blockquote class="phil-quote reveal reveal-d1" id="phil-h">
-          <span class="phil-mark" aria-hidden="true">&ldquo;</span>
-          &ldquo;Bukan soal siapa<br>yang paling bersinar,<br>
-          <span class="phil-accent">tetapi bagaimana kita</span><br>
-          membagi terang ke sekitar.&rdquo;
-        </blockquote>
-        <div class="phil-caption reveal reveal-d2">
-          <span class="phil-divider"></span>
-          <p>
-            Sebuah kompas nilai yang mendasari integritas, cara berpikir terstruktur,
-            serta semangat untuk menghadirkan teknologi yang memberikan dampak nyata dan bermanfaat bagi sesama.
-          </p>
         </div>
       </div>
     </section>
@@ -1911,8 +2022,8 @@
               <p class="about-num">001 &mdash; LATAR BELAKANG</p>
               <p>
                 Sejak kecil, saya tumbuh di lingkungan yang dekat dengan dunia teknologi dan informatika.
-                <em>Ibu saya merupakan dosen Informatika di ITATS</em>, sementara
-                <em>ayah saya adalah CEO dan Founder Vpoint Solusindo</em>. Dari keduanya, saya mengenal teknologi
+                <em>Ibu saya salah satu dosen di ITATS</em>, sementara
+                <em>ayah saya adalah Founder Vpoint Solusindo</em>. Dari keduanya, saya mengenal teknologi
                 melalui dua sudut pandang: akademis dan industri. Ibu memperkenalkan saya pada konsep, logika,
                 dan cara berpikir sistematis, sedangkan ayah menunjukkan bagaimana teknologi diterapkan untuk
                 menjawab kebutuhan nyata.
