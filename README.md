@@ -1,0 +1,1 @@
+Pada pertemuan minggu ke-2 perkuliahan mata kuliah Pemrograman Perangkat Bergerak, kami membahas tentang Jetpack Compose. Jetpack Compose adalah toolkit UI modern yang diperkenalkan Google untuk mempermudah pengembangan user interface di platform Android. Sebagai awalan pembelajaran, kami diminta untuk melakukan setup Android Studio, kemudian membuat proyek baru
